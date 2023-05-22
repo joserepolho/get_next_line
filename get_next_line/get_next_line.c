@@ -71,7 +71,7 @@ char	*get_next_line(int fd)
 	bf = malloc(BUFFER_SIZE + 1);
 	if (!bf)
 		return (0);
-	if (BUFFER_SIZE < 1 || fd < 0 || read(fd, bf, BUFFER_SIZE) < 0)
+	if (BUFFER_SIZE < 1 || fd < 0)
 	{
 		free (bf);
 		return (0);
